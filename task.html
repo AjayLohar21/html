@@ -1,0 +1,54 @@
+<html>
+    <head>
+        <title>layout</title>
+        <style>
+            body{
+                display: flex;
+                flex-direction: column;
+            }
+            #main{
+                display: flex;
+            }
+            img{
+                width: 50%;
+                object-fit: contain;
+            }
+           .frm{
+                margin: auto;
+           }
+
+           form ul{
+            list-style: none;
+            margin: 0%;
+            padding: 0%;
+           }
+
+           form li{
+            padding: 5px;
+           }
+            
+        </style>
+    </head>
+
+    <body>
+        <div id="main">
+            <div class="image">
+                <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80" alt="">
+            </div>
+            <div class="frm">
+                <p>Welcome back</p>
+                <h1>Login to your account</h1>
+                <form action="">
+                    <ul>
+                        <li><label for="">Password</label></li>
+                        <li><input type="password"></li>
+                        <li><label for="">Email</label></li>
+                        <li><input type="email"></li>
+                        <li><button class="lbtn">Login</button></li>
+                        <li><button class="sbtn">sign-in with google</button></li>
+                    </ul>
+                </form>
+            </div>
+        </div>
+    </body>
+</html>

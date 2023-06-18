@@ -1,0 +1,97 @@
+<html>
+    <head>
+        <title>form</title>
+        <style>
+            *{
+                box-sizing: border-box;
+            }
+
+            body{
+                font-family: Arial, Helvetica, sans-serif;
+                background-color: aliceblue;
+            }
+
+            .container{
+                margin: auto;
+                width: 900px;
+                /* background-color: black; */
+                border: 1px solid black;
+            }
+
+            .box{
+                padding: 20px;
+                
+                /* background-color: white; */
+                min-height: 500px;
+                border: 1px solid grey;
+                margin: auto;
+            }
+
+            ul{
+                margin: 0px;
+                padding: 0px;
+                list-style: none;
+            }
+
+            ul li{
+                padding: 10px;
+            }
+
+            label{
+                color: grey;
+            }
+
+            input{
+                width:70%;
+                height: 40px;
+            }
+
+           .log{
+                background-color: rgb(52, 199, 52);
+                width:70%;
+                height: 40px;
+                border: 1px solid rgb(52, 199, 52) ;
+                border-radius: 3px;
+                color: white;
+                font-size: medium;
+            }
+
+            form{
+                margin: auto;
+            }
+            .gle{
+            
+                background-color: rgb(21, 21, 46);
+                width:70%;
+                height: 40px;
+                border: 1px solid rgb(21, 21, 46) ;
+                border-radius: 3px;
+                color: white;
+                font-size: medium;
+            }
+            
+
+        </style>
+    </head>
+
+    <body>
+       <div class="container">
+        <div class="box">
+            welcome back
+            <h1>Login to your account</h1>
+            <form action="">
+                <ul>
+                    <li><label for="" >Password</label></li>
+                    <li><input type="password"></li>
+                    <li><label for="">Email</label></li>
+                    <li><input type="email"></li>
+                    
+                    <li><button class="log">Login now</button></li>
+                    <li><button class="gle">Sign-in with google</button></li>
+                </ul>
+            </form>
+            <p> Dont have an account? <a href="">Join Free today</a></p>
+        </div>
+       </div>
+    </body>
+</html>

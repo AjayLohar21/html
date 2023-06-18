@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Flexbox Layout</title>
+  <style>
+    /* CSS styles will be added here */
+    body, html {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      flex-direction: column;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+    p{
+        color:grey;
+    }
+    .container {
+      display: flex;
+      height: 100%;
+    }
+
+    .half {
+      flex: 1;
+    }
+
+    .p1{
+        background-color: aqua;
+    }
+
+    .p2{
+        background-color:white;
+        display: flex;
+    }
+
+    .p2 ul{
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .box{
+        padding: 50px;
+        margin: auto auto;
+    }
+
+    form li{
+            padding: 5px;
+    }
+    
+    label{
+        color:grey;
+    }
+
+    .txt{
+        width: 100%;
+        height:40px;
+    }
+
+    .lbtn{
+        background-color: rgb(52, 199, 52);
+        width:102%;
+        height: 40px;
+        border: 1px solid rgb(52, 199, 52) ;
+        border-radius: 3px;
+        color: white;
+        font-size: medium;
+    }
+
+    .sbtn{
+            
+            background-color: rgb(21, 21, 46);
+            width:102%;
+            height: 40px;
+            border: 1px solid rgb(21, 21, 46) ;
+            border-radius: 3px;
+            color: white;
+            font-size: medium;
+        }
+
+        .rad{
+            display: flex;
+            justify-content: space-between;
+        }
+
+        
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="half p1">
+        <!-- <img src="https://images.unsplash.com/photo-1586348943529-beaae6c28db9?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1915&q=80" alt=""> -->
+    </div>
+    <div class="half p2">
+        <div class="box">
+            <p>Welcome back</p>
+            <h1>Login to your account</h1>
+            <form action="">
+                <ul>
+                    <li><label for="">Password</label></li>
+                    <li><input class="txt"type="password"></li>
+                    <li><label for="">Email</label></li>
+                    <li><input class="txt" type="email"></li>
+                    <div class="rad">
+                        <li><input class="rem" type="radio"><label for="Remember me">Remember me</label></li>
+                        <li><a href="">Forgot password</a></li>
+                    </div>
+                    
+                    <li><button class="lbtn">Login</button></li>
+                    <li><button class="sbtn">sign-in with google</button></li>
+                </ul>
+            </form>
+        </div>
+       
+    </div>
+  </div>
+</body>
+</html>
